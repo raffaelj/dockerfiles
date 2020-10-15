@@ -2,6 +2,6 @@
 
 FROM raffaelj/php7-apache-base
 
-COPY ./index.php /var/www/html/index.php
+COPY . /var/www/html/
 
 CMD ["apache2-foreground"]
