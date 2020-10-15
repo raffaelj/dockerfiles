@@ -20,6 +20,6 @@ RUN apt-get update \
     && docker-php-ext-install -j$(nproc) iconv gd pdo zip opcache pdo_sqlite intl \
     && a2enmod rewrite expires
 
-VOLUME /var/www/html
+# VOLUME /var/www/html
 
 CMD ["apache2-foreground"]
