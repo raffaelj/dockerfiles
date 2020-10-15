@@ -1,3 +1,4 @@
+# A basic image with php7.4, apache and SQLite, mainly as a base to run Cockpit CMS or CpMultiplane with SQLite
 
 # docker build -t raffaelj/php7-apache-base:latest .
 
