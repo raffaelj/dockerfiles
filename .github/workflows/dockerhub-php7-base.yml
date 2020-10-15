@@ -4,8 +4,8 @@ name: Publish Docker image - php7-apache-base
 on:
   push:
     branches: master
-  paths:
-    - 'php7-apache-base/Dockerfile'
+    paths:
+      - 'php7-apache-base/Dockerfile'
 
 jobs:
   build:

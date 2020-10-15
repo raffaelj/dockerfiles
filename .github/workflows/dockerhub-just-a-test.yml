@@ -4,8 +4,8 @@ name: Publish Docker image - just a test
 on:
   push:
     branches: master
-  paths:
-    - 'just-a-test/*'
+    paths:
+      - 'just-a-test/*'
 
 jobs:
   build:
