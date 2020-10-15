@@ -1,3 +1,4 @@
+
 # docker build -t raffaelj/php7-apache-base:latest .
 
 FROM php:7.4-apache
