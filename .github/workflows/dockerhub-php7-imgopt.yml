@@ -1,5 +1,5 @@
 
-name: Publish Docker image - php7-apache-base
+name: Publish Docker image - php7-apache-imgopt
 
 on:
   push:
