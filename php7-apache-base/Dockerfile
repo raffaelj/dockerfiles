@@ -20,6 +20,9 @@ RUN apt-get update \
     && docker-php-ext-install -j$(nproc) iconv gd pdo zip opcache pdo_sqlite intl \
     && a2enmod rewrite expires
 
-# VOLUME /var/www/html
+# increase upload file size limit
+RUN touch /usr/local/etc/php/conf.d/uploads.ini \
+    && echo "upload_max_filesize = 256M;\npost_max_size = 256M;" >> /usr/local/etc/php/conf.d/uploads.ini
 
+# run apache
 CMD ["apache2-foreground"]
