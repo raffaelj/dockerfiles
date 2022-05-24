@@ -4,7 +4,7 @@
 
 FROM raffaelj/php7-apache-base
 
-# install libs and configure apache with SQLite (no MySQL, no MongoDB)
+# install tools for image optimization
 RUN apt-get update \
     && apt-get install -y \
         jpegoptim \

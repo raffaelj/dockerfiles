@@ -1,4 +1,4 @@
-# php7-apache-base - docker image
+# php8-apache-base - docker image
 
 docker image with php8, apache and SQLite
 
